@@ -5,8 +5,9 @@
 package ufps.poo2.ejercicio.banco;
 
 /**
- *
- * @author juan_
+ * @author Samir Conde 1152364
+ * @author David Rincón 1152327
+ * @author Juan David Ortiz Cano 1152298
  */
 public class SavingsAccount extends Account{
     
