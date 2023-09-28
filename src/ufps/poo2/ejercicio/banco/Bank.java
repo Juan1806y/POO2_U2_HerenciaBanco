@@ -10,13 +10,16 @@ import java.util.ArrayList;
 public class Bank {
 
     private ArrayList<Account> clientsAccount;
+
     private static Bank instance;
 
     private Bank() {
-        
-        this.clientsAccount = new ArrayList<>();
+    	
+    	this.clientsAccount = new ArrayList<>();
+ 
     }
     
+
     public static Bank getInstance() {
         
 	if(instance==null) {
@@ -27,6 +30,7 @@ public class Bank {
         
     }
     
+
     public double getBalance(int accnum)
     {
     
