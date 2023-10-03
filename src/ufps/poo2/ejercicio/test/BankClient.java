@@ -67,16 +67,16 @@ public class BankClient {
 			// Debe descomentar este bloque cuando implemente las clases
 			// -------------------------------------------------
 
-			CurrentAccount caObj = new CurrentAccount(3362189);
+			CurrentAccount caObj = new CurrentAccount(3362190);
 
-			System.out.println(saObj.toString());
+			System.out.println(caObj.toString());
 			caObj.deposit(-10);
 			caObj.deposit(70);
 			caObj.deposit(10);
 			caObj.deposit(34);
-			System.out.println(saObj.toString());
+			System.out.println(caObj.toString());
 			caObj.withdraw(65);
-			System.out.println(saObj.toString());
+			System.out.println(caObj.toString());
 			caObj.withdraw(70500);
 
 			// ================================================
@@ -96,6 +96,28 @@ public class BankClient {
 			bank.openAccount('C', 3324224);
 			bank.openAccount('C', 3379844);
 			bank.openAccount('A', 3399655);
+			
+			bank.openAccount('D', 3678223);
+			bank.openAccount('D', 3678455);
+			bank.openAccount('D', 3250155);
+			bank.openAccount('D', 3425478);
+			
+			bank.payDividend(3425478, -25);
+			bank.payDividend(3678223, 50);
+			bank.payDividend(3678455, 100);
+			bank.payDividend(3250155, 5000);
+			
+			System.out.println("Account 3425478: " + bank.getBalance(3425478));
+			System.out.println("Account 3678223: " + bank.getBalance(3678223));
+			System.out.println("Account 3678455: " + bank.getBalance(3678455));
+			System.out.println("Account 3250155: " + bank.getBalance(3250155));
+			
+			bank.withdrawAccount(3425478, 20);
+			bank.withdrawAccount(3678223, 5);
+			bank.withdrawAccount(3678455, 25);
+			bank.withdrawAccount(3250155, 30);
+			
+			bank.rentabilidadCuentasCDT(50);
 
 			bank.payDividend(3354678, 10);
 			bank.payDividend(3354678, 30);

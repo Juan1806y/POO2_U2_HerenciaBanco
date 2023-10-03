@@ -115,6 +115,11 @@ public class Bank {
         
             newAccount = new SavingsAccount(accnum);
         
+        }else if(accountType == 'D')
+        {
+        	
+        	newAccount = new CDT(accnum);
+        	
         }
         
         position = searchAccount(newAccount);
@@ -207,6 +212,21 @@ public class Bank {
                 
                 }
             
+            }
+        
+        }
+   
+   }
+   
+   public void rentabilidadCuentasCDT(int dias)
+   {
+   
+        for(Account a : getClientsAccount())
+        {
+        
+            if(a instanceof CDT cdt)
+            {
+                System.out.println("Account " + cdt.getAccountNumber() + " - Rentabilidad estimada: " + cdt.calcularRentabilidad(dias));
             }
         
         }
