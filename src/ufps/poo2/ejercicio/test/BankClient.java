@@ -67,16 +67,16 @@ public class BankClient {
 			// Debe descomentar este bloque cuando implemente las clases
 			// -------------------------------------------------
 
-			CurrentAccount caObj = new CurrentAccount(3362189);
+			CurrentAccount caObj = new CurrentAccount(3362190);
 
-			System.out.println(saObj.toString());
+			System.out.println(caObj.toString());
 			caObj.deposit(-10);
 			caObj.deposit(70);
 			caObj.deposit(10);
 			caObj.deposit(34);
-			System.out.println(saObj.toString());
+			System.out.println(caObj.toString());
 			caObj.withdraw(65);
-			System.out.println(saObj.toString());
+			System.out.println(caObj.toString());
 			caObj.withdraw(70500);
 
 			// ================================================
